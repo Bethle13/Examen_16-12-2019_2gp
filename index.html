@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Examen 2gp</title>
+        
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+       
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700&display=swap" rel="stylesheet">
+      
+       
+    
+     <style type="text/css">       
+     *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+         
+    header{ 
+        display: flex;
+        flex-direction: column;
+             
+         }
+         
+         header h4 {
+             font-family:'Raleway', sans-serif;
+             font-size: 17px;
+             font-weight: 200;
+             color:cornflowerblue;
+             margin: 0px 30px 0px 30px;
+             padding: 10px 600px 20px 5px;
+         }
+         
+         header h1 {
+            font-family: 'Playfair Display', serif;
+             font-size: 250px;
+             font-weight: 100;
+             color:cornflowerblue;
+             padding: 20px 20px 20px 0px;
+             margin: 10px 90px 0px 10px;
+             position: relative;
+             text-align: center;
+              
+         }
+         
+         .navegation {
+             font-family: 'Raleway', sans-serif;
+             font-size: 17px;
+             color:cornflowerblue;
+             margin: 10px 10px 10px 10px;
+             padding: 35px 0px 0px 1150px;
+             
+         }
+         
+        main figure:first-child{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+         .img_column {
+              grid-column: span 2;
+        grid-row: span 2;
+         }
+        .container{
+        display: grid;
+        grid-template: repeat(2,2fr)/repeat(3,1fr);
+        grid-gap: 10px;
+        margin: 0px 20px 0px 20px;
+        padding: 10px 10px 10px 10px;
+        }
+         
+    img{
+        width: 100%;
+    }
+    figure{
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0px 0px 0px;
+        padding: px 0px 0px 0px;
+    }
+    
+   .figure .cont_img{
+        background: green;
+        overflow: hidden;
+        flex-grow: 4;
+    }
+         
+    figure .cont_img img{
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 50%;
+    }
+    
+
+        .img:hover{
+            transition: 2.5s;
+            background-color: black;
+        }
+         
+    .footer{
+        font-family: 'Raleway', sans-serif;
+        font-size: 17px;
+        font-weight: 100;
+        display:grid;
+        flex-direction: column;
+        text-align: space-between;
+        margin: 10px 60px 60px 10px;
+        padding: 70px 60px 60px 10px;
+        column-count: 2;
+        column-gap: 1000px;
+         
+        
+         
+         
+         /*Respon*/
+    @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+        body{
+            background: orange;
+            font-size: 16px;
+        }
+        .container {
+            grid-template: repeat(4,1fr) / repeat(3,1fr)
+        }
+    }
+    
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+        body{
+            background: magenta;
+            font-size: 10px;
+        }
+        .container {
+            grid-template: repeat(4,1fr) / repeat(3,1fr)
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navegation">
+        <a href='#'>Work</a>
+        <a href='#'>Inspo</a>
+        <a href='#'>About</a>
+        </div>
+    </nav>
+    
+  <header>
+    <h4><p>We are a brand experience design company.  We partner with clients to help them connect with their audiences through outstanding products, experiences, and environments.  We do it through our unique design “with a point of view” approach.  We believe that enriching product experiences with a sense of style always delivers business results.</p></h4>
+      
+    <h1>Dothings</h1>
+  </header>
+    
+   <main class="container">
+       
+       <figure>
+           <div class="cont_img"><img src="img/dothings.jpg"></div>
+       </figure>
+       
+       <div class="img_columna"> 
+       <figure>
+          <div class="cont_img"><img src="img/vote.jpg"></div>
+       </figure>
+       
+       <figure>
+          <div class="cont_img"><img src="img/TomFord.gif"></div>
+       </figure>
+           
+       </div>
+       
+   </main>
+  
+    <div class="footer">
+    <h4>61 Greenpoint Ave, Suite #306</h4>
+    <h4>Brooklyn, NY 11222</h4>
+    <h4>212 228 3328</h4>
+    <h4>hello@dothingsnyc.com</h4>
+    <h4><a href="#">Instagram</a></h4>
+    <h4><a href="#">Linkedin</a></h4>
+    <h4>©Dothings 2019</h4>
+    
+        
+    </div>
+</body>
+</html>
